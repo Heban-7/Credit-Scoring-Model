@@ -17,11 +17,6 @@ scaler_path = "../data/scaler.pkl"
 model = load(model_path)
 scaler = load(scaler_path)
 
-# Mock database for transaction history
-transaction_history = pd.DataFrame(columns=[
-    'AccountId', 'Amount', 'Value', 'TransactionStartTime'
-])
-
 # Define the FastAPI app
 app = FastAPI(title="Fraud Detection API")
 
